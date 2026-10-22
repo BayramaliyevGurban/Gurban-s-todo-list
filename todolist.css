@@ -1,0 +1,244 @@
+body {
+    padding: 10px;
+}
+
+.todolist-title {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial;
+    text-align: center;
+}
+
+.todo-input {
+    height: 32px;
+    width: 600px;
+    align-items: center;
+    padding: 5px;
+}
+
+.add-button {
+    height: 46px;
+    width: 50px;
+    position: absolute;
+    background-color: green;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.todo-elements, .todolist {
+    height: 80px;
+    width: 100%;
+    margin: 10px 30px;
+    position: relative;
+}
+
+.todolist {
+    width: 660px;
+    height: 100%;
+}
+
+.js-edit-button {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.js-delete-button {
+    background-color: rgb(218, 33, 33);
+    border: none;
+    color: white;
+    padding: 11px 10px;
+    cursor: pointer;
+    margin-top: 2px; 
+}
+
+.js-todo-name {
+    margin: 5px;
+    font-size: 18px;
+}
+
+.js-list-todo-list {
+    margin-bottom: 5px;
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    grid-template-columns: 505px 70px 70px;
+    gap: 5px;
+}
+
+.todo-edit-input {
+    height: 30px;
+    width: 510px;
+    margin-left: -10px;
+}
+
+.js-edit-button, .js-save-button {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 11px 10px;
+    cursor: pointer;
+    margin-top: 2px; 
+}
+
+@media (max-width: 400px) {
+    body {
+        padding: 10px;
+    }
+
+    .todolist {
+        padding: 10px;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .todolist-title {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .todo-elements {
+        gap: 5px;
+    }
+
+    .todo-input {
+        height: 32px;
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+
+    .add-button {
+        height: 32px;
+        width: 60px;
+        font-size: 14px;
+    }
+
+    .js-list-todo-list {
+        gap: 8px;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .js-todo-name {
+        flex: 1;
+        margin: 0;
+        word-break: break-word;
+    }
+
+    .js-edit-button, 
+    .js-save-button, 
+    .js-delete-button {
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+
+    .todo-edit-input {
+        height: 32px;
+        font-size: 14px;
+        padding: 4px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .todolist {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .todolist-title {
+        font-size: 25px;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Блок ввода новой задачи */
+    .todo-elements {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        width: 100%;
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+
+    .todo-input {
+        height: 35px;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        width: 380px;
+        margin-left: -30px;
+    }
+
+    .add-button {
+        height: 35px;
+        background-color: green;
+        border: none;
+        color: white;
+        cursor: pointer;
+        padding: 8px 12px;
+        margin-left: 355px;
+    }
+
+    /* Список элементов */
+    .js-list-todo-list {
+        display: grid;
+        grid-template-columns: 1fr auto auto; /* Текст занимает всё свободное место, кнопки подстраиваются */
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+        padding: 0;
+        width: 100%;
+    }
+
+    .js-todo-name {
+        margin: 0;
+        font-size: 16px;
+        word-break: break-word; /* Чтобы длинные слова не ломали верстку */
+    }
+
+    /* Кнопки Edit / Delete */
+    .js-edit-button, 
+    .js-save-button {
+        background-color: green;
+        border: none;
+        color: white;
+        padding: 8px 12px;
+        cursor: pointer;
+    }
+
+    .js-delete-button {
+        background-color: rgb(218, 33, 33);
+        border: none;
+        color: white;
+        padding: 8px 12px;
+        cursor: pointer;
+    }
+
+    /* Поле редактирования задачи */
+    .todo-edit-input {
+        height: 35px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 5px;
+    }
+}
