@@ -115,7 +115,7 @@ body {
         align-items: center;
         justify-content: space-between;
         box-sizing: border-box;
-        width: 300px;
+        width: 200px;
         gap: 8px;
         margin-bottom: 20px;
     }
@@ -123,7 +123,7 @@ body {
     .todo-input {
         height: 35px;
         padding: 5px 10px;
-        width: 300px;
+        width: 200px;
         margin-left: -30px;
         box-sizing: border-box;
     }
@@ -135,18 +135,18 @@ body {
         color: white;
         cursor: pointer;
         padding: 8px 12px;
-        margin-left: 270px;
+        margin-left: 170px;
     }
 
     /* Список элементов */
     .js-list-todo-list {
         display: grid;
-        grid-template-columns: 190px 70px 70px; /* Текст занимает всё свободное место, кнопки подстраиваются */
+        grid-template-columns: 100px 50px 60px; /* Текст занимает всё свободное место, кнопки подстраиваются */
         align-items: center;
-        gap: 10px;
+        gap: 5px;
         margin-bottom: 10px;
         padding: 0;
-        width: 300px;
+        width: 250px;
     }
 
     .js-todo-name {
