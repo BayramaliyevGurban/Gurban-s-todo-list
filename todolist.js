@@ -10,17 +10,17 @@ function startTodo() {
         if (index === editingIndex) {
             todoListHTML += `
             <div class="js-list-todo-list">
-            <input type="text" class="todo-edit-input js-todo-input-edit-${index}" value="${todoText}">
-            <button class="js-save-button" data-index="${index}">Save</button>
-            <button class="js-delete-button">Delete</button>
+                <input type="text" class="todo-edit-input js-todo-input-edit-${index}" value="${todoText}">
+                <button class="js-save-button" data-index="${index}">Save</button>
+                <button class="js-delete-button">Delete</button>
             </div>
             `;
         } else {
             todoListHTML += `
             <div class="js-list-todo-list">
-            <div class="js-todo-name">${todoText}</div>
-            <button class="js-edit-button" data-index="${index}">Edit</button>
-            <button class="js-delete-button">Delete</button>
+                <div class="js-todo-name">${todoText}</div>
+                <button class="js-edit-button" data-index="${index}">Edit</button>
+                <button class="js-delete-button">Delete</button>
             </div>
             `;
         };
